@@ -1,0 +1,26 @@
+{
+    "full_name": "Dheeraj Reddy",
+    "name": "Dheeraj",
+    "current_role": "Java Backend Engineer (seeking opportunities; latest listed role at HP ended Jan 2026)",
+    "location": "Hyderabad, Telangana, India",
+    "email": "bommareddy1122@gmail.com",
+    "linkedin": "linkedin.com/in/dheerajbr46",
+    "specialties": [
+        "Java 21 & Spring Boot microservices",
+        "Distributed systems & Kafka/RabbitMQ",
+        "AWS, CI/CD & production reliability"
+    ],
+    "years_experience": 5,
+    "education": [
+        {
+            "degree": "Master's in Computer Science",
+            "institution": "The University of Texas at Arlington",
+            "year": "2020"
+        },
+        {
+            "degree": "B.Tech in Electrical, Electronics and Communications Engineering",
+            "institution": "BV Raju Institute of Technology (BVRIT)",
+            "year": "2018"
+        }
+    ]
+}
