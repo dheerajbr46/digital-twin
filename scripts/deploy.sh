@@ -6,6 +6,17 @@ PROJECT_NAME=${2:-twin}
 
 echo "🚀 Deploying ${PROJECT_NAME} to ${ENVIRONMENT}..."
 
+- name: Inspect GitHub OIDC token
+  uses: actions/github-script@v7
+  with:
+    script: |
+      const token = await core.getIDToken('sts.amazonaws.com')
+      const payload = JSON.parse(
+        Buffer.from(token.split('.')[1], 'base64url').toString()
+      )
+
+      console.log('sub:', payload.sub)
+
 # 1. Build Lambda package
 cd "$(dirname "$0")/.."        # project root
 echo "📦 Building Lambda package..."
